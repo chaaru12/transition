@@ -1,0 +1,14 @@
+p{
+    border: 2px solid black;
+    width: 150px;
+    height: 200px;
+    background-color: darkgoldenrod;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+}
+p:hover{
+    width: 300px;
+    background-color: red;
+    height:400px;
+    transform: rotate(720deg);
+}

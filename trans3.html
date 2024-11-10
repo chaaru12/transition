@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transition</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vh;
+            display: flex;
+            margin-left: 400px;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+        }
+        .box{
+            border: 3px solid purple;
+        }
+        a{
+            text-decoration: none;
+        }
+        .para{
+            overflow: hidden;
+            max-height: 0px;
+            transition: max-height 0.5s ease;
+        }
+        .para:target{
+            max-height: 150px;
+        }
+        .para p{
+            padding: 10px;
+        }
+        .title{
+            padding: 10px;
+            display: block;
+            background-color: plum;
+        }
+        .title:hover{
+            color: white;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item1">
+            <a href="#t1" class="title">Title1</a>
+            <div class="para" id="t1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quia consequatur amet vitae cupiditate rem vel aut temporibus! Sequi repellendus illum, ex possimus quis quo ut! Possimus officiis quae accusamus.</p>
+            </div>
+        </div>
+        <div class="item2">
+            <a href="#t2" class="title">Title2</a>
+            <div class="para" id="t2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quia consequatur amet vitae cupiditate rem vel aut temporibus! Sequi repellendus illum, ex possimus quis quo ut! Possimus officiis quae accusamus.</p>
+            </div>
+        </div>
+        <div class="item4">
+            <a href="#t3" class="title">Title3</a>
+            <div class="para" id="t3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quia consequatur amet vitae cupiditate rem vel aut temporibus! Sequi repellendus illum, ex possimus quis quo ut! Possimus officiis quae accusamus.</p>
+            </div>
+        </div>
+        <div class="item5">
+            <a href="#t4" class="title">Title4</a>
+            <div class="para" id="t4">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quia consequatur amet vitae cupiditate rem vel aut temporibus! Sequi repellendus illum, ex possimus quis quo ut! Possimus officiis quae accusamus.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
